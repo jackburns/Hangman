@@ -17,12 +17,12 @@ Hangman.prototype = {
 		letter = letter.toUpperCase();
 		var validList = [],
 		valid = false,
-		i,
+		i;
 
 		// Check if letter has already been guessed
 		if(!guessedLetters.indexOf(letter) > -1) {
 			this.guessedLetters.push(letter);
-
+		}
 			// Find all indices of letter within word
 			for(i = 0; i < word.length; i++) {
 				if (word[i] === letter) {
@@ -30,7 +30,8 @@ Hangman.prototype = {
 					validList.push[i + 1];
 				}
 			}
-		}
 		return validList;
 	}
 };
+
+module.exports = Hangman;
