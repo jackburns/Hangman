@@ -20,6 +20,7 @@ app.use(session({
 
 var games = [];
 
+app.use(express.static(__dirname + 'public'));
 
 app.get('/', function (req, res) {
 	console.log(req.session.game);
@@ -30,7 +31,6 @@ app.get('/', function (req, res) {
  	} else {
  		console.log('success');
  	}
- 		res.send('Hello World!');
 
 });
 
