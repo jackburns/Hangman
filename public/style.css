@@ -1,0 +1,28 @@
+.letter {
+	display: inline-block;
+	height: 25px;
+	width: 35px;
+	margin: 0 10px;
+	vertical-align: middle;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+.letter:first-child {
+	margin: 0;
+}
+
+#hangman-word{
+	margin-bottom: 10px;
+}
+
+p {
+	margin: 5px 0 0 !important;
+}
+
+#letter-input {
+	width: 50px;
+}
+.error {
+	color: red;
+}
