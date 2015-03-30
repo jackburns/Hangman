@@ -1,26 +1,33 @@
 <!DOCTYLE html>
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Hangman</title>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Hangman</title>
 
-        <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/client.js"></script>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.css">
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.css" >
-        <script src="client.js"></script>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container">
     <h2>Hangman</h2>
+
     <div id="hangman">
-    	<div id="hangman-canvas">
-    	</div>
+        <canvas id="hangman-canvas" width="300" height="300">
+        </canvas>
+        <div id="hangman-word"></div>
+        <p id="remaining-attempts">Remaining Attempts: 10</p>
+
+        <p>Input letter: <input id="letter-input" type="text" autofocus/></p>
+
+        <p id="hangman-letters">Guessed Letters: </p>
+
+        <p class="games-won"></p>
+
+        <p class="games-lost"></p>
     </div>
-    <!--form
-    canvas -->
-    </body>
+</div>
+</body>
